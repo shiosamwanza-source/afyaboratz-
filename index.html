@@ -1,0 +1,144 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>afyaboratz — Simple Landing</title>
+  <meta name="description" content="afyaboratz — a clean, simple landing page template." />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' rx='20' fill='%2300a69c'/%3E%3Ctext x='50' y='57' font-family='Inter,Helvetica,Arial' font-size='50' fill='white' text-anchor='middle' font-weight='600'%3Ea%3C/text%3E%3C/svg%3E">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="#">
+        <img src="logo.svg" alt="afyaboratz logo" class="logo">
+        <span class="brand-name">afyaboratz</span>
+      </a>
+      <nav class="nav">
+        <a href="#features">Features</a>
+        <a href="#about">About</a>
+        <a href="#contact" class="btn btn-ghost">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="container hero-grid">
+        <div class="hero-content">
+          <h1>afyaboratz</h1>
+          <p class="lead">A simple, fast landing page template you can customize and deploy in minutes.</p>
+          <div class="hero-ctas">
+            <a href="#features" class="btn btn-primary">Learn more</a>
+            <a href="#contact" class="btn btn-secondary">Get in touch</a>
+          </div>
+        </div>
+        <div class="hero-visual" aria-hidden="true">
+          <div class="card">
+            <h3>Clean design</h3>
+            <p>Responsive, accessible, and ready to brand.</p>
+            <div class="tags">
+              <span>HTML</span><span>CSS</span><span>Static</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="features" class="section features">
+      <div class="container">
+        <h2 class="section-title">Features</h2>
+        <div class="features-grid">
+          <article class="feature">
+            <h3>Fast & Lightweight</h3>
+            <p>Small footprint so pages load quickly on any device.</p>
+          </article>
+          <article class="feature">
+            <h3>Responsive</h3>
+            <p>Looks great on mobile, tablet and desktop without extra work.</p>
+          </article>
+          <article class="feature">
+            <h3>Easily Customizable</h3>
+            <p>Swap colors, fonts, and content to make it yours.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="about" class="section about">
+      <div class="container about-inner">
+        <div class="about-text">
+          <h2>About afyaboratz</h2>
+          <p>afyaboratz is a starter landing page template. It's intended for quick demos, MVPs, and personal project pages. No frameworks required — just plain HTML and CSS.</p>
+          <ul>
+            <li>Accessible markup</li>
+            <li>Semantic structure</li>
+            <li>Simple forms and CTAs</li>
+          </ul>
+        </div>
+        <aside class="about-aside">
+          <h3>Quick start</h3>
+          <ol>
+            <li>Customize text & colors in styles.css</li>
+            <li>Add your logo at <code>logo.svg</code></li>
+            <li>Open <code>index.html</code> in a browser</li>
+          </ol>
+        </aside>
+      </div>
+    </section>
+
+    <section id="contact" class="section contact">
+      <div class="container contact-inner">
+        <div>
+          <h2>Contact</h2>
+          <p>Use the form to capture leads (this example is non-functional — replace action with your form handler).</p>
+          <form class="contact-form" action="#" method="post" onsubmit="event.preventDefault(); alert('This is a demo contact form — wire it to your backend.');">
+            <label>
+              Name
+              <input type="text" name="name" required>
+            </label>
+            <label>
+              Email
+              <input type="email" name="email" required>
+            </label>
+            <label>
+              Message
+              <textarea name="message" rows="4" required></textarea>
+            </label>
+            <div class="form-actions">
+              <button type="submit" class="btn btn-primary">Send message</button>
+              <button type="reset" class="btn btn-ghost">Reset</button>
+            </div>
+          </form>
+        </div>
+        <div class="contact-info" aria-hidden="true">
+          <h3>Stay updated</h3>
+          <p>Subscribe to releases and updates by linking a small mailing list or newsletter provider.</p>
+          <div class="meta">
+            <div><strong>Location</strong><br/>Remote</div>
+            <div><strong>Status</strong><br/>Prototype</div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <div>© <span id="year"></span> afyaboratz — Built with a simple template.</div>
+      <div class="footer-links">
+        <a href="#">Privacy</a>
+        <a href="#">Terms</a>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    // small JS for dynamic year and basic behavior
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
